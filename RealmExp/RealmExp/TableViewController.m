@@ -80,6 +80,7 @@
         [realm beginWriteTransaction];
         [realm deleteObject:self.array[indexPath.row]];
         [realm commitWriteTransaction];
+        [self.tableView reloadData];
     }
 }
 
