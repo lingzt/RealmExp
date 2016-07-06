@@ -1,14 +1,15 @@
 //
-//  house.m
-//  
+//  House.m
+//  RealmExp
 //
 //  Created by ling toby on 7/6/16.
-//
+//  Copyright © 2016 Detroit Labs. All rights reserved.
 //
 
-#import "house.h"
+#import "House.h"
 
-@implementation house
+@implementation House
+
 
 // Specify default values for properties
 

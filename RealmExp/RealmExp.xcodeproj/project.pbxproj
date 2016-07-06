@@ -14,7 +14,8 @@
 		9000B98D1D2D42000023AA9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9000B98B1D2D42000023AA9A /* Main.storyboard */; };
 		9000B98F1D2D42000023AA9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9000B98E1D2D42000023AA9A /* Assets.xcassets */; };
 		9000B9921D2D42000023AA9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9000B9901D2D42000023AA9A /* LaunchScreen.storyboard */; };
-		90FA7A521D2D567D0047C2F2 /* house.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA7A501D2D567D0047C2F2 /* house.m */; };
+		90FA7A551D2D5B450047C2F2 /* House.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA7A541D2D5B450047C2F2 /* House.m */; };
+		90FA7A591D2D5E570047C2F2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FA7A581D2D5E570047C2F2 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,8 +44,10 @@
 		9000B98E1D2D42000023AA9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9000B9911D2D42000023AA9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9000B9931D2D42000023AA9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90FA7A4F1D2D567D0047C2F2 /* house.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = house.h; sourceTree = "<group>"; };
-		90FA7A501D2D567D0047C2F2 /* house.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = house.m; sourceTree = "<group>"; };
+		90FA7A531D2D5B450047C2F2 /* House.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = House.h; sourceTree = "<group>"; };
+		90FA7A541D2D5B450047C2F2 /* House.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = House.m; sourceTree = "<group>"; };
+		90FA7A571D2D5E570047C2F2 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		90FA7A581D2D5E570047C2F2 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		A31EA003F761F3B42709B423 /* libPods-RealmExp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmExp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,11 +74,12 @@
 		9000B9761D2D42000023AA9A = {
 			isa = PBXGroup;
 			children = (
+				90FA7A511D2D567D0047C2F2 /* Models */,
+				90FA7A561D2D5DDB0047C2F2 /* ViewController */,
 				9000B9811D2D42000023AA9A /* RealmExp */,
 				9000B9801D2D42000023AA9A /* Products */,
 				FAF4DEE9396DC7C9795F7870 /* Pods */,
 				072119D8BC9ED836BEE73517 /* Frameworks */,
-				90FA7A511D2D567D0047C2F2 /* Models */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,8 +96,6 @@
 			children = (
 				9000B9851D2D42000023AA9A /* AppDelegate.h */,
 				9000B9861D2D42000023AA9A /* AppDelegate.m */,
-				9000B9881D2D42000023AA9A /* ViewController.h */,
-				9000B9891D2D42000023AA9A /* ViewController.m */,
 				9000B98B1D2D42000023AA9A /* Main.storyboard */,
 				9000B98E1D2D42000023AA9A /* Assets.xcassets */,
 				9000B9901D2D42000023AA9A /* LaunchScreen.storyboard */,
@@ -114,10 +116,22 @@
 		90FA7A511D2D567D0047C2F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				90FA7A4F1D2D567D0047C2F2 /* house.h */,
-				90FA7A501D2D567D0047C2F2 /* house.m */,
+				90FA7A531D2D5B450047C2F2 /* House.h */,
+				90FA7A541D2D5B450047C2F2 /* House.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		90FA7A561D2D5DDB0047C2F2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9000B9881D2D42000023AA9A /* ViewController.h */,
+				9000B9891D2D42000023AA9A /* ViewController.m */,
+				90FA7A571D2D5E570047C2F2 /* TableViewController.h */,
+				90FA7A581D2D5E570047C2F2 /* TableViewController.m */,
+			);
+			name = ViewController;
+			path = RealmExp;
 			sourceTree = "<group>";
 		};
 		FAF4DEE9396DC7C9795F7870 /* Pods */ = {
@@ -253,7 +267,8 @@
 			files = (
 				9000B98A1D2D42000023AA9A /* ViewController.m in Sources */,
 				9000B9871D2D42000023AA9A /* AppDelegate.m in Sources */,
-				90FA7A521D2D567D0047C2F2 /* house.m in Sources */,
+				90FA7A551D2D5B450047C2F2 /* House.m in Sources */,
+				90FA7A591D2D5E570047C2F2 /* TableViewController.m in Sources */,
 				9000B9841D2D42000023AA9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
