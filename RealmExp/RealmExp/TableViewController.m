@@ -58,7 +58,7 @@
 }
 
 
-//add to Realm
+//MARK: - add to Realm
 - (IBAction)AddHouse:(UIBarButtonItem *)sender {
     RLMRealm *realm = RLMRealm.defaultRealm;
     [realm beginWriteTransaction];
@@ -72,8 +72,7 @@
     return [NSString stringWithFormat:@"The guest is: %d", arc4random()];
 }
 
-
-//delect from Realm
+//MARK: - delect from Realm
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
